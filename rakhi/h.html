@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raksha Bandhan 2025</title>
+  <link rel="icon" href="https://i.imgur.com/7xQ0yRj.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Yrsa&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Yrsa', serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #683345, #b5fffc);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .wrapper {
+      text-align: center;
+      background: rgb(172, 241, 111);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      max-width: 700px;
+      width: 100%;
+      position: relative;
+    }
+
+    marquee {
+      font-size: 3.3em;
+      color: #a02757;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #c0392b;
+      margin-bottom: 20px;
+    }
+
+    .start-btn {
+      padding: 12px 30px;
+      background: #642bc0;
+      color: white;
+      font-size: 1em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.4s;
+    }
+
+    .start-btn:hover {
+      background: #3ce759;
+    }
+
+    .content {
+      margin-top: 20px;
+      display: none;
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    video {
+      width: 90%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+   .rakhi-img {
+    border-radius: 8px;
+  width: 80px;
+  display: block;
+  margin: 20px auto;
+  animation: rotateRakhi 6s linear infinite;
+}
+
+@keyframes rotateRakhi {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+    button.action {
+      margin: 10px 8px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      background: #1ec7e9;
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button.action:hover {
+      background: #3ce759;
+    }
+
+    .message,
+    .story {
+      margin-top: 15px;
+      font-size: 1.1em;
+      display: none;
+    }
+
+    .story {
+      background: #ffe8f0;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #ffb6c1;
+      line-height: 1.6;
+      text-align: left;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+
+    @media (max-width: 600px) {
+      .wrapper {
+        padding: 20px;
+      }
+      h1 {
+        font-size: 1.5em;
+      }
+      marquee {
+        font-size: 1.1em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <marquee behavior="scroll" direction="left">🎉 Happy Raksha Bandhan 2025 – A Celebration of Love Between Brother and Sister 💖</marquee>
+
+    <h1>🎀 Welcome to Raksha Bandhan 2025 🎀</h1>
+    <button class="start-btn" onclick="showContent()">Start Celebration</button>
+
+    <div class="content" id="contentBox">
+      <video id="myVideo" controls poster="https://i.imgur.com/7xQ0yRj.png">
+        <source src="rakhi video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <img src="rakhi.avif" alt="Rakhi" class="rakhi-img" />
+
+      <div>
+        <button class="action" onclick="tieRakhi()">Tie Rakhi</button>
+        <button class="action" onclick="showStory()">Show Story</button>
+      </div>
+
+      <p class="message" id="message">💖 Rakhi tied with love! Happy Raksha Bandhan! 💖</p>
+      <div class="story" id="storyBox"></div>
+    </div>
+
+    <audio id="bgMusic" src=""></audio>
+  </div>
+
+  <script>
+    const contentBox = document.getElementById("contentBox");
+    const message = document.getElementById("message");
+    const storyBox = document.getElementById("storyBox");
+    const music = document.getElementById("bgMusic");
+    const video = document.getElementById("myVideo");
+
+    function showContent() {
+      contentBox.style.display = "block";
+    }
+
+    function tieRakhi() {
+      video.play();
+      music.play();
+      message.style.display = "block";
+    }
+
+    function showStory() {
+      const story = `
+        Ek chhoti si bahan, har saal apne bhai ke liye rakhi le kar aati thi. 
+        Uski aankhon mein khushi hoti, aur bhai ke chehre par ek muskan.
+        Wo kehti: "Mujhe kuch nahi chahiye, bas tu khush rehna."
+        Bhai bhi kehta: "Teri har muskan meri zindagi hai."
+        Raksha Bandhan ka ye bandhan, sirf dhage ka nahi, prem ka hai.
+        Aisa prem jisme na koi shart hai, na koi doori.
+        Har saal ki tarah, is baar bhi bahan ne rakhi baandhi,
+        aur bhai ne vachan diya – "Main hamesha tera saath dunga." 💖
+      `;
+      storyBox.innerText = story;
+      storyBox.style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
